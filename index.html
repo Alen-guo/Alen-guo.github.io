@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarTennis - 专业网球装备购物平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans SC", sans-serif;
+      }
+      .swiper {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header 导航区域 -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <nav
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <img src="images/logo.png" alt="StarTennis" class="h-8" />
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-700 hover:text-blue-600">首页</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">产品展示</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">在线购物</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">会员中心</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">赛事资讯</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">品牌故事</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-gray-700 hover:text-blue-600">登录</a>
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+            >注册</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 bg-gradient-to-r from-blue-600 to-blue-800">
+      <div class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="text-white">
+            <h1 class="text-5xl font-bold mb-6">
+              专业网球装备，助您赢得每一场比赛
+            </h1>
+            <p class="text-xl mb-8">
+              精选全球顶级网球品牌，为您提供专业的网球装备解决方案
+            </p>
+            <a
+              href="#"
+              class="bg-white text-blue-600 px-8 py-3 rounded-md hover:bg-gray-100"
+              >立即选购</a
+            >
+          </div>
+          <div class="relative">
+            <img
+              src="images/hero-image.jpg"
+              alt="网球装备"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">我们的优势</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center p-6">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">正品保证</h3>
+            <p class="text-gray-600">所有商品均为官方授权，品质有保障</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">极速配送</h3>
+            <p class="text-gray-600">24小时内发货，全国配送服务</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">专业服务</h3>
+            <p class="text-gray-600">专业团队为您提供贴心服务</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">用户评价</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img src="images/user1.jpg" alt="用户头像" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">张先生</h4>
+                <div class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">"产品质量非常好，服务也很专业，强烈推荐！"</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img src="images/user2.jpg" alt="用户头像" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">李女士</h4>
+                <div class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">"物流速度很快，包装也很用心，非常满意！"</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img src="images/user3.jpg" alt="用户头像" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">王教练</h4>
+                <div class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">"作为专业教练，这里的装备品质值得信赖！"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">常见问题</h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold mb-2">如何成为会员？</h3>
+            <p class="text-gray-600">您可以通过注册账号并完成实名认证来成为我们的会员，享受更多优惠和服务。</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-bold mb-2">商品如何退换？</h3>
+            <p class="text-gray-600">我们提供7天无理由退换服务，具体细则请查看退换货政策。</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-bold mb-2">如何查询订单状态？</h3>
+            <p class="text-gray-600">登录您的账号后，在"我的订单"中即可查看订单状态和物流信息。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">购物流程</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-search text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">浏览商品</h3>
+            <p class="text-gray-600">选择您需要的网球装备</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shopping-cart text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">加入购物车</h3>
+            <p class="text-gray-600">将商品加入购物车</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-credit-card text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">支付订单</h3>
+            <p class="text-gray-600">选择支付方式完成支付</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-truck text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">收货评价</h3>
+            <p class="text-gray-600">等待收货并给予评价</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">会员等级</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">普通会员</h3>
+            <p class="text-4xl font-bold mb-6">¥0<span class="text-lg text-gray-500">/月</span></p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>基础购物功能</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>积分奖励</span>
+              </li>
+            </ul>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">立即加入</button>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg transform scale-105">
+            <div class="bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full inline-block mb-4">推荐</div>
+            <h3 class="text-2xl font-bold mb-4">黄金会员</h3>
+            <p class="text-4xl font-bold mb-6">¥99<span class="text-lg text-gray-500">/月</span></p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>所有普通会员权益</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>9折优惠</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>专属客服</span>
+              </li>
+            </ul>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">立即升级</button>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">钻石会员</h3>
+            <p class="text-4xl font-bold mb-6">¥199<span class="text-lg text-gray-500">/月</span></p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>所有黄金会员权益</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>8折优惠</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>优先发货</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>专属活动邀请</span>
+              </li>
+            </ul>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">立即升级</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-bold mb-4">关于我们</h4>
+            <p class="text-gray-400">
+              StarTennis致力于为网球爱好者提供专业的装备服务
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">快速链接</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">产品展示</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">会员中心</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">赛事资讯</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">联系我们</h4>
+            <p class="text-gray-400">联系方式：gx1998xg</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">关注我们</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-weixin text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-weibo text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-400">© 2024 StarTennis. 版权所有 郭星（Alen）</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
